@@ -1,7 +1,7 @@
 from pydantic import BaseModel, constr
 from typing import Optional
 from datetime import date
-from models.payment import PaymentType, PaymentStatus
+from app.models.payment import PaymentType, PaymentStatus
 
 # Base Payment Schema
 class PaymentBase(BaseModel):

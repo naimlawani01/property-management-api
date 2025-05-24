@@ -2,13 +2,13 @@ from typing import List, Optional
 from fastapi import APIRouter, Depends, Query, HTTPException, status
 from sqlalchemy.orm import Session
 
-from core.database import get_db
-from services.auth import AuthService
-from services.property import PropertyService
-from schemas.property import Property, PropertyCreate, PropertyUpdate
-from models.user import User, UserRole
-from models.property import PropertyStatus
-from models.contract import Contract, ContractStatus
+from app.core.database import get_db
+from app.services.auth import AuthService
+from app.services.property import PropertyService
+from app.schemas.property import Property, PropertyCreate, PropertyUpdate
+from app.models.user import User, UserRole
+from app.models.property import PropertyStatus
+from app.models.contract import Contract, ContractStatus
 
 router = APIRouter()
 property_service = PropertyService()

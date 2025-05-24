@@ -1,7 +1,7 @@
 from pydantic import BaseModel, constr
 from typing import Optional
 from datetime import date
-from models.maintenance import MaintenanceStatus, MaintenanceType
+from app.models.maintenance import MaintenanceStatus, MaintenanceType
 
 # Base Maintenance Request Schema
 class MaintenanceRequestBase(BaseModel):

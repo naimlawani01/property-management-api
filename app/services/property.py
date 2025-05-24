@@ -1,12 +1,12 @@
 from typing import List, Optional
 from fastapi import HTTPException, status
 from sqlalchemy.orm import Session
-from models.property import Property, PropertyType, PropertyStatus
-from core.logging import get_logger
+from app.models.property import Property, PropertyType, PropertyStatus
+from app.core.logging import get_logger
 
-from schemas.property import PropertyCreate, PropertyUpdate
-from models.user import User, UserRole
-from models.contract import Contract, ContractStatus
+from app.schemas.property import PropertyCreate, PropertyUpdate
+from app.models.user import User, UserRole
+from app.models.contract import Contract, ContractStatus
 
 logger = get_logger(__name__)
 

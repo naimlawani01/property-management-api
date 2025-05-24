@@ -1,8 +1,8 @@
-from schemas.user import User, UserCreate, UserUpdate, UserWithToken
-from schemas.property import Property, PropertyCreate, PropertyUpdate
-from schemas.contract import Contract, ContractCreate, ContractUpdate
-from schemas.payment import Payment, PaymentCreate, PaymentUpdate
-from schemas.maintenance import (
+from app.schemas.user import User, UserCreate, UserUpdate, UserWithToken
+from app.schemas.property import Property, PropertyCreate, PropertyUpdate
+from app.schemas.contract import Contract, ContractCreate, ContractUpdate
+from app.schemas.payment import Payment, PaymentCreate, PaymentUpdate
+from app.schemas.maintenance import (
     MaintenanceRequest,
     MaintenanceRequestCreate,
     MaintenanceRequestUpdate

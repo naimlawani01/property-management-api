@@ -3,9 +3,9 @@ from datetime import date
 from fastapi import HTTPException, status
 from sqlalchemy.orm import Session
 
-from models.payment import Payment, PaymentStatus
-from models.contract import Contract, ContractStatus
-from schemas.payment import PaymentCreate, PaymentUpdate
+from app.models.payment import Payment, PaymentStatus
+from app.models.contract import Contract, ContractStatus
+from app.schemas.payment import PaymentCreate, PaymentUpdate
 
 class PaymentService:
     @staticmethod

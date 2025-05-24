@@ -2,7 +2,7 @@ from sqlalchemy import Boolean, Column, Integer, String, Float, Enum, ForeignKey
 from sqlalchemy.orm import relationship
 import enum
 
-from core.database import Base
+from app.core.database import Base
 
 class PropertyType(str, enum.Enum):
     APARTMENT = "apartment"

@@ -1,7 +1,7 @@
 from pydantic import BaseModel, constr
 from typing import Optional
 from datetime import date
-from models.contract import ContractType, ContractStatus
+from app.models.contract import ContractType, ContractStatus
 
 # Base Contract Schema
 class ContractBase(BaseModel):

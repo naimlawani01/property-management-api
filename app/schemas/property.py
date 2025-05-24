@@ -1,6 +1,6 @@
 from pydantic import BaseModel, constr
 from typing import Optional
-from models.property import PropertyType, PropertyStatus
+from app.models.property import PropertyType, PropertyStatus
 
 # Base Property Schema
 class PropertyBase(BaseModel):

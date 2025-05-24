@@ -1,8 +1,8 @@
-from services.auth import AuthService
-from services.property import PropertyService
-from services.contract import ContractService
-from services.payment import PaymentService
-from services.maintenance import MaintenanceService 
+from app.services.auth import AuthService
+from app.services.property import PropertyService
+from app.services.contract import ContractService
+from app.services.payment import PaymentService
+from app.services.maintenance import MaintenanceService 
 
 # Export all services
 __all__ = [

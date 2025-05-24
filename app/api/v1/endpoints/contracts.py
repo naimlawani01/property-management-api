@@ -2,12 +2,12 @@ from typing import List, Optional
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 
-from core.database import get_db
-from services.auth import AuthService
-from services.contract import ContractService
-from schemas.contract import Contract, ContractCreate, ContractUpdate
-from models.user import User, UserRole
-from models.contract import ContractStatus
+from app.core.database import get_db
+from app.services.auth import AuthService
+from app.services.contract import ContractService
+from app.schemas.contract import Contract, ContractCreate, ContractUpdate
+from app.models.user import User, UserRole
+from app.models.contract import ContractStatus
 
 router = APIRouter()
 contract_service = ContractService()

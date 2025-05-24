@@ -3,10 +3,10 @@ from datetime import date
 from fastapi import HTTPException, status
 from sqlalchemy.orm import Session
 
-from models.maintenance import MaintenanceRequest, MaintenanceStatus
-from models.property import Property
-from schemas.maintenance import MaintenanceRequestCreate, MaintenanceRequestUpdate
-from models.user import User
+from app.models.maintenance import MaintenanceRequest, MaintenanceStatus
+from app.models.property import Property
+from app.schemas.maintenance import MaintenanceRequestCreate, MaintenanceRequestUpdate
+from app.models.user import User
 
 class MaintenanceService:
     @staticmethod

@@ -2,16 +2,16 @@ from typing import List, Optional
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 
-from core.database import get_db
-from services.auth import AuthService
-from services.maintenance import MaintenanceService
-from schemas.maintenance import (
+from app.core.database import get_db
+from app.services.auth import AuthService
+from app.services.maintenance import MaintenanceService
+from app.schemas.maintenance import (
     MaintenanceRequest,
     MaintenanceRequestCreate,
     MaintenanceRequestUpdate
 )
-from models.user import User, UserRole
-from models.maintenance import MaintenanceStatus
+from app.models.user import User, UserRole
+from app.models.maintenance import MaintenanceStatus
 
 router = APIRouter()
 maintenance_service = MaintenanceService()

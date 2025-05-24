@@ -1,6 +1,6 @@
 from pydantic import BaseModel, EmailStr, constr
 from typing import Optional
-from models.user import UserRole
+from app.models.user import UserRole
 
 # Base User Schema
 class UserBase(BaseModel):

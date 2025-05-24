@@ -3,9 +3,9 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from typing import List, Optional, Dict, Any
 import requests
-from .config import settings
-from .exceptions import NotificationException
-from .logging import get_logger
+from app.core.config import settings
+from app.core.exceptions import NotificationException
+from app.core.logging import get_logger
 
 logger = get_logger(__name__)
 

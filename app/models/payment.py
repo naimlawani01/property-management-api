@@ -2,14 +2,14 @@ from sqlalchemy import Boolean, Column, Integer, String, Float, Enum, ForeignKey
 from sqlalchemy.orm import relationship
 import enum
 
-from core.database import Base
+from app.core.database import Base
 
 class PaymentType(str, enum.Enum):
     RENT = "rent"
     DEPOSIT = "deposit"
     CHARGES = "charges"
     MAINTENANCE = "maintenance"
-    OTHER = "other"
+    OTHER = "other" 
 
 class PaymentStatus(str, enum.Enum):
     PENDING = "pending"

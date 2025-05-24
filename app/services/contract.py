@@ -3,10 +3,10 @@ from datetime import date
 from fastapi import HTTPException, status
 from sqlalchemy.orm import Session
 
-from models.contract import Contract, ContractStatus
-from models.property import Property, PropertyStatus
-from schemas.contract import ContractCreate, ContractUpdate
-from models.user import User
+from app.models.contract import Contract, ContractStatus
+from app.models.property import Property, PropertyStatus
+from app.schemas.contract import ContractCreate, ContractUpdate
+from app.models.user import User
 
 class ContractService:
     @staticmethod

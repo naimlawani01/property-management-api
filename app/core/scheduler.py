@@ -6,12 +6,12 @@ from apscheduler.jobstores.memory import MemoryJobStore
 from apscheduler.executors.pool import ThreadPoolExecutor
 from sqlalchemy.orm import Session
 import pytz
-from .logging import get_logger
-from .notifications import notification_manager
-from models.contract import Contract
-from models.payment import Payment
-from models.maintenance import MaintenanceRequest
-from .config import settings
+from app.core.logging import get_logger
+from app.core.notifications import notification_manager
+from app.models.contract import Contract
+from app.models.payment import Payment
+from app.models.maintenance import MaintenanceRequest
+from app.core.config import settings
 
 logger = get_logger(__name__)
 

@@ -2,7 +2,7 @@ import logging
 import sys
 from pathlib import Path
 from logging.handlers import RotatingFileHandler
-from core.config import settings
+from app.core.config import settings
 
 # Créer le dossier logs s'il n'existe pas
 log_dir = Path("logs")

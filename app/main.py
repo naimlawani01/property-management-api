@@ -1,11 +1,11 @@
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
-from core.logging import logger, api_logger
-from core.scheduler import task_scheduler
-from api.v1.api import api_router
-from core.database import SessionLocal
-from core.config import settings
+from app.core.logging import logger, api_logger
+from app.core.scheduler import task_scheduler
+from app.api.v1.api import api_router
+from app.core.database import SessionLocal
+from app.core.config import settings
 import traceback
 
 app = FastAPI(
